@@ -1,6 +1,6 @@
 def euler_85():
-    diff, closest, a, b = float('inf'), float('inf'), float('inf'), float('inf')
-    for i in range(1, 2000):
+    diff = float('inf')
+    for i in range(1, 2001):
         for j in range(1, i + 1):
             total = sum(range(1, i + 1)) * sum(range(1, j + 1))
             if abs(2e6 - total) < diff:
