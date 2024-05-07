@@ -1,3 +1,12 @@
+def mutually_prime(m, n):
+    min_num = min(m, n)
+    for i in range(2, min_num + 1):
+        if m % i == 0 and n % i == 0:
+            return False
+    else:
+        return True
+
+
 counter = 0
 d = {}
 for m in range(2, 870):  # 870
